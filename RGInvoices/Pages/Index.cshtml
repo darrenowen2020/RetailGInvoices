@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+	<div class="table" >
+		<div class="thead-dark">
+			<tr>
+				<th>New Key</th>
+				<th>Site</th>
+				<th>Payment Date</th>
+			</tr>
+		</div>
+		<div
+	</div>
+	<select id="Select1" asp-items="@(new SelectList(Model.DisplayData,"SiteKey","SiteName"))">
+		<option value="" selected disabled>-- Select Site--</option>
+
+	</select>
+</div>
